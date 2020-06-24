@@ -165,7 +165,9 @@ Notice that if you are using two 200w cameras, there's no need to use hardware s
 Run:
 
 ```
-./install/install.sh
+download the driver from the matrix-vision site and install in the system(opt)
+https://www.matrix-vision.com/USB2.0-single-board-camera-mvbluefox-mlc.html?camera=mvBlueFOX-MLC200wC&col=1&row=cmos
+
 ```
 
 This will install mvIMPACT_Acquire SDK to `/opt`.
