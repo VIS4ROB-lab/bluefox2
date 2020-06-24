@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
     roscpp nodelet camera_base
     message_generation
     )
-find_package(mvIMPACT REQUIRED)
+find_package(mvIMPACT_Acquire REQUIRED)
 find_package(Boost COMPONENTS program_options REQUIRED)
 
 # dynamic reconfigure
@@ -19,15 +19,15 @@ add_service_files(FILES SetExposeSrv.srv)
 generate_messages(DEPENDENCIES std_msgs)
 
 catkin_package(
-    INCLUDE_DIRS include ${mvIMPACT_INCLUDE_DIRS}
-    LIBRARIES ${PROJECT_NAME} ${mvIMPACT_LIBRARIES}
+    INCLUDE_DIRS include ${mvIMPACT_Acquire_INCLUDE_DIRS}
+    LIBRARIES ${PROJECT_NAME} ${mvIMPACT_Acquire_LIBRARIES}
     CATKIN_DEPENDS message_runtime
     )
 
 include_directories(
     include
     ${catkin_INCLUDE_DIRS}
-    ${mvIMPACT_INCLUDE_DIRS}
+    ${mvIMPACT_Acquire_INCLUDE_DIRS}
     )
 
 add_subdirectory(src)

@@ -9,7 +9,7 @@ add_library(${PROJECT_NAME}
     multi/multi_node.cpp
     )
 target_link_libraries(${PROJECT_NAME}
-    ${mvIMPACT_LIBRARIES}
+    ${mvIMPACT_Acquire_LIBRARIES}
     ${catkin_LIBRARIES}
     )
 
